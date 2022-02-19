@@ -9,11 +9,11 @@ def generator():
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-    nr_letters = simpledialog.askinteger("Enter number of letters","How many letters would you like in your password?", minvalue=6,maxvalue=len(letters))
+    nr_letters = simpledialog.askinteger("Enter quantity of letters","How many letters would you like in your password?", minvalue=6,maxvalue=len(letters))
     window.update()
-    nr_symbols = simpledialog.askinteger("Enter number of symbols","How many symbols would you like in your password?", minvalue=4,maxvalue=len(symbols))
+    nr_symbols = simpledialog.askinteger("Enter quantity of symbols","How many symbols would you like in your password?", minvalue=4,maxvalue=len(symbols))
     window.update()
-    nr_numbers = simpledialog.askinteger("Enter number of numbers","How many numbers would you like in your password?", minvalue=4,maxvalue=len(numbers))
+    nr_numbers = simpledialog.askinteger("Enter quantity of numbers","How many numbers would you like in your password?", minvalue=4,maxvalue=len(numbers))
 
     rand_letters = [letters[random.randint(0,len(letters)-1)] for letters[random.randint(0,len(letters)-1)] in range(0,nr_letters)]
     rand_symb = [symbols[random.randint(0,len(symbols)-1)] for symbols[random.randint(0,len(symbols)-1)] in range(0,nr_symbols)]
